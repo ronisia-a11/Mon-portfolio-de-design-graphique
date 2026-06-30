@@ -1,0 +1,28 @@
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f9f9f9;color:#222;}
+
+/* Navbar */
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:#1E2A38;color:white;position:sticky;top:0;z-index:100;}
+.logo{font-size:22px;font-weight:bold;}
+.nav-links a{color:white;text-decoration:none;margin-left:30px;transition:0.3s;}
+.nav-links a:hover{color:#0D6EFD;transform:translateY(-3px);}
+
+/* Social bar */
+.social-bar{position:fixed;top:50%;left:20px;transform:translateY(-50%);display:flex;flex-direction:column;gap:20px;font-size:22px;}
+.social-bar a{color:#555;transition:0.3s;}
+.social-bar a:hover{transform:scale(1.2);}
+.social-bar .fa-linkedin{color:#0A66C2;}
+.social-bar .fa-github{color:#000;}
+.social-bar .fa-tiktok{color:#000;}
+.social-bar .fa-envelope{color:#D44638;}
+
+/* Hero Section */
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 20px;min-height:80vh;background:#fff;}
+.hero h1{font-size:36px;color:#1E2A38;margin-bottom:20px;}
+.hero p{max-width:600px;line-height:1.6;margin-bottom:30px;}
+.btn{background:#0D6EFD;color:white;padding:12px 25px;border-radius:5px;text-decoration:none;font-weight:bold;transition:0.3s;}
+.btn:hover{background:#0844a4;}
+
+/* Footer */
+.footer{background:#1E2A38;color:white;text-align:center;padding:20px;margin-top:50px;}

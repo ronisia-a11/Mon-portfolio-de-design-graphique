@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">RONIS OFFILIE</div>
+    <nav class="nav-links">
+      <a href="menu.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Mes projets.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+    <main>
+        <h1>Formulaire de contact</h1>
+
+        <form id="contactForm" action="traitement_contact.php" method="post">
+            <input type="text" id="nom" name="nom" placeholder="Noms et Prénoms " required>
+
+            <input type="text" id="contact" name="contact" placeholder="Contact" required>
+
+            <input type="email" id="gmail" name="gmail" placeholder="Gmail " required>
+
+            <input type="text" id="objectif" name="objectif" placeholder="Objectifs " required>
+
+            <textarea id="explication" name="explication" placeholder="Explications de l'objectif " required></textarea>
+
+            <!-- Liste déroulante pour le pays -->
+            <select id="pays" name="pays" required>
+                <option value="" disabled selected>Choisir un pays </option>
+                <option value="Cameroun">Cameroun</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Cote d'ivoire">Cote d'Ivoire</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Benin">Benin</option>
+                <option value="Tchad">Tchad</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Mali">Mali</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niger">Niger</option>
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Rome">Rome</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">États-Unis</option>
+            </select>
+
+            <!-- Liste déroulante pour les langues -->
+            <select id="langue" name="langue" required>
+                <option value="" disabled selected>Choisir une langue </option>
+                <option value="Français">Français</option>
+                <option value="Italien">Italien</option>
+                <option value="Arabe">Arabe</option>
+                <option value="Anglais">Anglais</option>
+                <option value="Espagnol">Espagnol</option>
+                <option value="Allemand">Allemand</option>
+                <option value="Chinois">Chinois</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit">Envoyer</button>
+                <button type="reset">Effacer</button>
+            </div>
+        </form>
+
+        <p id="message"></p>
+    </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Navigation -->
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="menu.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Mes projets.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Réseaux sociaux -->
+            <div class="footer-social">
+                <h3>Me suivre</h3>
+                <ul>
+                    <li><a href="mailto:offilieoffilie@gmail.com">Mon Gmail</a></li>
+                </ul>
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@linformaticien18" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://github.com/ronisia-a11" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ronis-offilie-falleu-lendeu-3676a8395/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:offilieoffilie@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RONIS OFFILIE. Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
